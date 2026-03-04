@@ -1,5 +1,7 @@
 site_name: Skills, Lies and Videotape
 site_url: https://vismathomas.github.io/skills-lies-and-videotape/
+repo_url: https://github.com/vismathomas/skills-lies-and-videotape
+repo_name: vismathomas/skills-lies-and-videotape
 docs_dir: docs
 site_dir: site
 use_directory_urls: true
