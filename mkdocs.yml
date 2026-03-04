@@ -1,0 +1,159 @@
+site_name: Skills, Lies and Videotape
+site_url: https://vismathomas.github.io/mkdocs-template/
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.sections
+    - navigation.tabs
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.code.select
+    - content.tooltips
+    - toc.follow
+
+plugins:
+  - search
+
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Skills:
+      - Overview: skills/index.md
+      - Analysis & Review:
+          - Overview: skills/analysis/index.md
+          - Context Map Generator: skills/analysis/context-map.md
+          - Improvement Discovery: skills/analysis/improvement-discovery.md
+          - Postmortem Analysis: skills/analysis/postmortem.md
+          - Potential Discovery: skills/analysis/potential-discovery.md
+          - Project Section Identification: skills/analysis/project-sections.md
+          - Temporal Risk Analysis: skills/analysis/temporal-risk.md
+      - Planning:
+          - Overview: skills/planning/index.md
+          - Structured Interview: skills/planning/interview.md
+          - Junior-Level Explanations: skills/planning/junior-explain.md
+          - Plan Preview Generator: skills/planning/plan-preview.md
+          - Plan Review Import: skills/planning/plan-review-import.md
+          - Shadow Plan Generator: skills/planning/shadow-plan.md
+      - Git & Version Control:
+          - Overview: skills/git/index.md
+          - GitHub PR Actionable Comments: skills/git/gh-actionable-comments.md
+          - GitHub Pull-Request Info: skills/git/gh-pr-info.md
+          - Safe Git Operations: skills/git/git.md
+          - Git Repository Analysis: skills/git/git-analysis.md
+          - Git Story Generator: skills/git/git-story.md
+          - Git Worktree Management: skills/git/git-worktree.md
+      - Frontend & Design:
+          - Overview: skills/frontend/index.md
+          - Frontend Design: skills/frontend/frontend-design.md
+          - GitHub-Safe Mermaid Diagrams: skills/frontend/mermaid.md
+          - Web Artifacts Builder: skills/frontend/web-artifacts.md
+          - Web Asset Generator: skills/frontend/web-assets.md
+      - Testing & Browser Automation:
+          - Overview: skills/testing/index.md
+          - Agent Browser CLI: skills/testing/agent-browser.md
+          - Gherkin Architecture & Suite Design: skills/testing/gherkin-architecture.md
+          - Gherkin Playwright Integration: skills/testing/gherkin-playwright.md
+          - Gherkin Feature File Review: skills/testing/gherkin-review.md
+          - Gherkin Step Definition Generator: skills/testing/gherkin-step-generator.md
+          - Gherkin UI Alignment Validation: skills/testing/gherkin-ui-alignment.md
+          - Gherkin UI Vocabulary Library: skills/testing/gherkin-ui-vocabulary.md
+          - Playwright Browser Automation: skills/testing/playwright.md
+          - Playwright E2E Test Runner: skills/testing/playwright-e2e-runner.md
+          - Playwright Reusable Operations: skills/testing/playwright-ops.md
+          - Playwright Recorder: skills/testing/playwright-recorder.md
+      - Utility:
+          - Overview: skills/utility/index.md
+          - Systematic Debugging: skills/utility/debugging.md
+          - Markdown to Jira Conversion: skills/utility/markdown-jira.md
+          - Deep Topic Research: skills/utility/research.md
+          - YouTube Transcript Extraction: skills/utility/youtube-transcript.md
+      - Documentation:
+          - Overview: skills/documentation/index.md
+          - Astro Documentation Sites: skills/documentation/astro-docs.md
+          - Word Document Generation: skills/documentation/docx.md
+          - MkDocs Site Management: skills/documentation/mkdocs.md
+          - PowerPoint Presentation Generation: skills/documentation/pptx.md
+          - Versioning & Release Management: skills/documentation/versioning.md
+      - Review:
+          - Overview: skills/review/index.md
+          - Adversarial Code Review: skills/review/adversary.md
+          - Article Verification: skills/review/article-verification.md
+          - Cognitive Load Tracker: skills/review/cognitive-load.md
+          - Narrative Coherence Audit: skills/review/narrative-audit.md
+          - Feature Justification Audit: skills/review/prove-your-worth.md
+          - Reality Audit: skills/review/reality-audit.md
+          - Code Review Response: skills/review/review-response.md
