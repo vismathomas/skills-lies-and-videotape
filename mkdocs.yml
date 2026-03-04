@@ -161,3 +161,6 @@ nav:
           - Markdown to Jira Conversion: skills/utility/markdown-jira.md
           - Deep Topic Research: skills/utility/research.md
           - YouTube Transcript Extraction: skills/utility/youtube-transcript.md
+  - User Stories:
+      - Overview: user-stories/index.md
+      - Hello World: user-stories/hello-world.md

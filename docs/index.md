@@ -12,7 +12,8 @@ Welcome to the skills documentation site — a curated library of AI agent skill
 
 ## Getting Started
 
-Browse the [:material-bookshelf: Skills Library](skills/index.md) to explore available skills by category.
+Browse the [:material-bookshelf: Skills Library](skills/index.md) to explore available skills by category,
+or read [:material-book-account: User Stories](user-stories/index.md) for real-world experiences and workflows.
 
 Each skill page includes:
 

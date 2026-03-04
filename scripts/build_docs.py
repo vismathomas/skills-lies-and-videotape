@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SKILLS_SRC = ROOT / "skills"
 DOCS_DIR = ROOT / "docs"
 DOCS_SKILLS = DOCS_DIR / "skills"
+DOCS_USER_STORIES = DOCS_DIR / "user-stories"
 MKDOCS_YML = ROOT / "mkdocs.yml"
 
 SKIP_DIRS = {"_archived"}
@@ -286,7 +287,8 @@ def generate_home_page(skills_by_cat: dict[str, list[dict]]) -> str:
         "",
         "## Getting Started",
         "",
-        "Browse the [:material-bookshelf: Skills Library](skills/index.md) to explore available skills by category.",
+        "Browse the [:material-bookshelf: Skills Library](skills/index.md) to explore available skills by category,",
+        "or read [:material-book-account: User Stories](user-stories/index.md) for real-world experiences and workflows.",
         "",
         "Each skill page includes:",
         "",
@@ -309,7 +311,62 @@ def generate_home_page(skills_by_cat: dict[str, list[dict]]) -> str:
     return "\n".join(lines)
 
 
-def build_nav(skills_by_cat: dict[str, list[dict]]) -> list:
+def collect_user_stories() -> list[dict]:
+    """Scan docs/user-stories/ and collect metadata for manually written pages."""
+    stories = []
+    if not DOCS_USER_STORIES.exists():
+        return stories
+    for f in sorted(DOCS_USER_STORIES.iterdir()):
+        if not f.is_file() or f.suffix != ".md" or f.name == "index.md":
+            continue
+        content = f.read_text(encoding="utf-8")
+        fm = parse_frontmatter(content)
+        title = fm.get("title", f.stem.replace("-", " ").title())
+        description = fm.get("description", "")
+        category = fm.get("category", "")
+        stories.append({
+            "file": f.name,
+            "title": title,
+            "description": description,
+            "category": category,
+        })
+    return stories
+
+
+def generate_user_stories_index(stories: list[dict]) -> str:
+    """Re-generate the user stories index page with a listing of all stories."""
+    lines = [
+        "---",
+        "title: User Stories",
+        'description: "Real-world stories, experiences, and workflows from skill users."',
+        "icon: material/book-account",
+        "---",
+        "",
+        "# :material-book-account: User Stories",
+        "",
+        "Real-world stories, experiences, and workflows from skill users.",
+        "",
+        "Drop a markdown file in this folder to have it automatically appear here. Each page should include frontmatter with `title`, `description`, and optionally `category`.",
+        "",
+        "---",
+        "",
+    ]
+    if stories:
+        lines.append(f"**{len(stories)} {'story' if len(stories) == 1 else 'stories'}** published.")
+        lines.append("")
+        lines.append("| Story | Description |")
+        lines.append("|-------|-------------|")
+        for story in stories:
+            desc = story["description"][:100] + "..." if len(story["description"]) > 100 else story["description"]
+            lines.append(f"| [{story['title']}]({story['file']}) | {desc} |")
+        lines.append("")
+    else:
+        lines.append("*No stories yet — be the first to contribute!*")
+        lines.append("")
+    return "\n".join(lines)
+
+
+def build_nav(skills_by_cat: dict[str, list[dict]], user_stories: list[dict] | None = None) -> list:
     """Build the nav structure for mkdocs.yml."""
     skills_nav = [{"Overview": "skills/index.md"}]
 
@@ -331,10 +388,17 @@ def build_nav(skills_by_cat: dict[str, list[dict]]) -> list:
                 cat_items.append({skill["title"]: f"skills/{cat_key}/{skill['folder']}.md"})
             skills_nav.append({label: cat_items})
 
+    # User stories nav
+    stories_nav_items: list = [{"Overview": "user-stories/index.md"}]
+    if user_stories:
+        for story in user_stories:
+            stories_nav_items.append({story["title"]: f"user-stories/{story['file']}"})
+
     return [
         {"Home": "index.md"},
         {"Installation & Usage": "installation.md"},
         {"Skills": skills_nav},
+        {"User Stories": stories_nav_items},
     ]
 
 
@@ -414,7 +478,15 @@ def main():
 
     # Update mkdocs.yml nav
     print("\n=== Updating mkdocs.yml nav ===\n")
-    nav = build_nav(skills_by_cat)
+
+    # Collect and generate user stories
+    user_stories = collect_user_stories()
+    if user_stories:
+        us_index = generate_user_stories_index(user_stories)
+        (DOCS_USER_STORIES / "index.md").write_text(us_index, encoding="utf-8")
+        print(f"  ✓ docs/user-stories/index.md ({len(user_stories)} stories)")
+
+    nav = build_nav(skills_by_cat, user_stories)
     update_mkdocs_yml(nav)
     print("  ✓ mkdocs.yml nav updated")
 
