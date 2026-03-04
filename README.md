@@ -6,6 +6,8 @@
 
 A curated collection of **48 AI agent skills** for software engineering workflows, organized across **8 categories**.
 
+**[Browse the documentation site →](https://vismathomas.github.io/skills-lies-and-videotape/)**
+
 ## Categories
 
 | Category | Skills | Description |
@@ -82,6 +84,7 @@ A curated collection of **48 AI agent skills** for software engineering workflow
 ### Build the docs site
 
 ```bash
+uv sync                               # install dependencies
 uv run scripts/build_docs.py          # generate docs + update nav
 uv run scripts/build_docs.py --serve  # generate + launch dev server
 uv run scripts/build_docs.py --build  # generate + build static site
