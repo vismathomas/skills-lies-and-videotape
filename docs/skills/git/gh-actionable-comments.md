@@ -9,6 +9,9 @@ description: "Analyze PR review comments using gh CLI to identify actionable ite
 
 :material-tag: `git`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/gh-actionable-comments/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/gh-actionable-comments/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Analyzes pull request review comments using the gh CLI to identify actionable items from reviewer feedback and author replies. Tracks which comments have been acknowledged and still need to be addressed.

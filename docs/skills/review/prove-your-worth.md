@@ -9,6 +9,9 @@ description: "Ruthlessly audit project features for justification. Challenge eve
 
 :material-tag: `review`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/prove-your-worth/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/prove-your-worth/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Ruthlessly audits project features for justification. Challenges every feature to prove its value with evidence — researches alternatives, measures usage, and recommends keep/remove/simplify/extract verdicts.

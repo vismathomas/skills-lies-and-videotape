@@ -9,6 +9,9 @@ description: "Parse exported PR review comments into structured review format fo
 
 :material-tag: `planning`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/plan-review-import/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/plan-review-import/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Parses exported PR review comments into structured review format for plan integration. Enables importing external feedback into the planning workflow.

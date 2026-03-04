@@ -4,7 +4,7 @@ description: "UI design, web assets, and visual tooling"
 icon: material/palette
 ---
 
-# :palette: Frontend & Design
+# :material-palette: Frontend & Design
 
 UI design, web assets, and visual tooling
 

@@ -9,6 +9,9 @@ description: "Record browser navigation as versioned artifacts and validate repl
 
 :material-tag: `testing`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/playwright-recorder/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/playwright-recorder/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Captures browser navigation as versioned artifacts and validates replay in CI with snapshot-aware checks. Enables record-now, validate-later workflows for UI flow verification.

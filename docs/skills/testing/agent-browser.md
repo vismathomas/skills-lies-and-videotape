@@ -9,6 +9,9 @@ description: "Declarative browser automation via Vercel agent-browser CLI with r
 
 :material-tag: `testing`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/agent-browser/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/agent-browser/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Declarative browser automation using the Vercel agent-browser CLI. Uses ref-based interactions for fast, exploratory browser tasks without generating full scripts.

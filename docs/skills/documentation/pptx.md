@@ -9,6 +9,9 @@ description: "Create, read, and edit PowerPoint presentations (.pptx). Use when 
 
 :material-tag: `documentation` · :material-github: [https://github.com/anthropics/skills/tree/main/skills/pptx](https://github.com/anthropics/skills/tree/main/skills/pptx)
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/pptx/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/pptx/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Creates, reads, and edits PowerPoint presentations (.pptx) with strong design guidance and mandatory visual QA. Includes curated color palettes, typography rules, and layout patterns.

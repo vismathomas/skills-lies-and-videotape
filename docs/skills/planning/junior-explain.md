@@ -9,6 +9,9 @@ description: "Translate complex plans or implementations into junior-level expla
 
 :material-tag: `planning`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/junior-explain/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/junior-explain/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Translates complex plans or implementations into junior-level explanations. If you can't explain it simply, you don't understand it. Useful for documentation, onboarding, and validating understanding.

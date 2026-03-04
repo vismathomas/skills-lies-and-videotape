@@ -9,6 +9,9 @@ description: "Transform implementation plans into concise stakeholder-friendly s
 
 :material-tag: `planning`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/plan-preview/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/plan-preview/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Transforms detailed implementation plans into concise, stakeholder-friendly summaries with file change overviews, component listings, and optional flow diagrams. Configurable detail levels.

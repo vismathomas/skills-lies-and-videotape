@@ -9,6 +9,9 @@ description: "Generate ReqnRoll step definition classes from Gherkin feature fil
 
 :material-tag: `testing`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/gherkin-step-generator/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/gherkin-step-generator/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Generates ReqnRoll step definition classes from Gherkin feature files with real API integration test implementations. Creates WebApplicationFactory infrastructure, typed API clients, and state management.

@@ -4,7 +4,7 @@ description: "Browser automation, E2E testing, and BDD/Gherkin"
 icon: material/test-tube
 ---
 
-# :test-tube: Testing & Browser Automation
+# :material-test-tube: Testing & Browser Automation
 
 Browser automation, E2E testing, and BDD/Gherkin
 

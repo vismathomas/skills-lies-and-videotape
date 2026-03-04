@@ -9,6 +9,9 @@ description: "Controlled vocabulary of UI interaction steps with helper function
 
 :material-tag: `testing`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/gherkin-ui-vocabulary/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/gherkin-ui-vocabulary/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Defines and enforces a controlled vocabulary of UI interaction steps with corresponding helper function signatures in TypeScript, Python, and C#. Ensures consistency across all feature files and adapters.

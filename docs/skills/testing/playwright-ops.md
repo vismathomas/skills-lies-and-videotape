@@ -9,6 +9,9 @@ description: "Reusable, composable browser operations for admin workflows, evide
 
 :material-tag: `testing`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/playwright-ops/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/playwright-ops/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Builds reusable, composable browser operations for admin workflows, evidence capture, and runbook automation. Supports both CLI macros for quick execution and code adapters for maintainability.

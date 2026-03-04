@@ -9,6 +9,9 @@ description: "Extract comprehensive information from a GitHub pull request using
 
 :material-tag: `git`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/gh-pr-info/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/gh-pr-info/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Extracts comprehensive information from a GitHub pull request using the gh CLI and GitHub REST API. Fetches metadata, reviews, inline comments, status checks, and file changes.

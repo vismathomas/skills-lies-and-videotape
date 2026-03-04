@@ -9,6 +9,9 @@ description: "Systematic debugging approaches for isolating and fixing software 
 
 :material-tag: `utility`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/debugging/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/debugging/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Provides systematic debugging approaches for isolating and fixing software defects. Use when something isn't working and the cause is unclear — follows structured investigation rather than guesswork.

@@ -9,6 +9,9 @@ description: "Generate narrative summaries from git history for onboarding, retr
 
 :material-tag: `git`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/git-story/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/git-story/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Generates human-readable narratives from git commit history. Useful for onboarding new team members, creating retrospective summaries, building changelogs, and exploring project evolution.

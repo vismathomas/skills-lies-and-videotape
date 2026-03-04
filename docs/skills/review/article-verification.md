@@ -9,6 +9,9 @@ description: "Systematically deconstruct written content into verifiable claims,
 
 :material-tag: `review`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/article-verification/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/article-verification/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Systematically deconstructs written content into verifiable claims, validates each using search and documentation, and facilitates informed discussion through structured interviewing. Ideal for fact-checking articles before publication.

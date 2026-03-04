@@ -9,6 +9,9 @@ description: "MkDocs documentation site management: initializing, updating, buil
 
 :material-tag: `documentation`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/mkdocs/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/mkdocs/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Manages MkDocs documentation sites: initializing new sites with Material theme, adding pages, generating navigation, building, previewing, and deploying to GitHub Pages.

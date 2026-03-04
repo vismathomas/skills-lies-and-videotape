@@ -9,6 +9,9 @@ description: "Conduct structured interviews with the user. Use when multiple dec
 
 :material-tag: `planning`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/interview/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/interview/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Conducts structured interviews with the user. Asks one question at a time, waits for responses, and records answers. Ideal when multiple decisions need user input without overwhelming them.

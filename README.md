@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/images/logo.png" alt="Skills, Lies and Videotape" width="400">
+</p>
+
 # Skills, Lies and Videotape
 
 A curated collection of **48 AI agent skills** for software engineering workflows, organized across **8 categories**.

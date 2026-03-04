@@ -9,6 +9,9 @@ description: "Review and lint Gherkin feature files for quality, consistency, an
 
 :material-tag: `testing`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/gherkin-review/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/gherkin-review/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Reviews and lints Gherkin feature files for quality, consistency, and BDD best practices. Catches anti-patterns before CI. Supports English and Norwegian (bokmål) localization.

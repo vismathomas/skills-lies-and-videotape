@@ -4,7 +4,7 @@ description: "General-purpose utility skills"
 icon: material/wrench
 ---
 
-# :wrench: Utility
+# :material-wrench: Utility
 
 General-purpose utility skills
 

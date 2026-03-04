@@ -9,6 +9,9 @@ description: "Analyze git repository for insights: contributor stats, commit pat
 
 :material-tag: `git`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/git-analysis/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/git-analysis/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Analyzes git repositories for insights including contributor statistics, commit patterns, branch health, and change analysis. Produces actionable reports from repository history.

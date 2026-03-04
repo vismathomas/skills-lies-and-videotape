@@ -9,6 +9,9 @@ description: "Receive and respond to code review feedback. Verify suggestions be
 
 :material-tag: `review`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/review-response/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/review-response/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Handles receiving and responding to code review feedback. Verifies suggestions before implementing, pushes back with reasoning when appropriate, and avoids performative agreement.

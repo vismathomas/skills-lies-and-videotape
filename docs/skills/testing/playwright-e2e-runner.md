@@ -9,6 +9,9 @@ description: "High-throughput, language-agnostic Playwright E2E execution with e
 
 :material-tag: `testing`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/playwright-e2e-runner/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/playwright-e2e-runner/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Runs stable, fast browser E2E test suites with eventual-consistency primitives and CI sharding guidance. Language-agnostic architecture supporting JS/TS, Python, and C# adapters.

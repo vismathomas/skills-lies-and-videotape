@@ -9,6 +9,9 @@ description: "Integrate Gherkin/BDD feature files with Playwright browser automa
 
 :material-tag: `testing`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/gherkin-playwright/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/gherkin-playwright/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Integrates Gherkin/BDD feature files with Playwright browser automation. Covers locator strategy, page objects, auth reuse, and eventual consistency patterns. Multi-language: TypeScript, Python, C#.

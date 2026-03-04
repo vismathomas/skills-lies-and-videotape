@@ -17,6 +17,14 @@ A curated collection of **48 skills** organized across **8 categories**.
 
     :material-arrow-right: [6 skills](analysis/index.md)
 
+-   :material-shield-check:{ .lg .middle } **[Review](review/index.md)**
+
+    ---
+
+    Code review, auditing, and verification
+
+    :material-arrow-right: [7 skills](review/index.md)
+
 -   :material-clipboard-check:{ .lg .middle } **[Planning](planning/index.md)**
 
     ---
@@ -32,6 +40,14 @@ A curated collection of **48 skills** organized across **8 categories**.
     Git operations, analysis, and history management
 
     :material-arrow-right: [6 skills](git/index.md)
+
+-   :material-book-open-variant:{ .lg .middle } **[Documentation](documentation/index.md)**
+
+    ---
+
+    Documentation sites, document generation, and release management
+
+    :material-arrow-right: [5 skills](documentation/index.md)
 
 -   :material-palette:{ .lg .middle } **[Frontend & Design](frontend/index.md)**
 
@@ -56,18 +72,6 @@ A curated collection of **48 skills** organized across **8 categories**.
     General-purpose utility skills
 
     :material-arrow-right: [4 skills](utility/index.md)
-
--   :material-puzzle: **[Documentation](documentation/index.md)**
-
-    ---
-
-    :material-arrow-right: [5 skills](documentation/index.md)
-
--   :material-puzzle: **[Review](review/index.md)**
-
-    ---
-
-    :material-arrow-right: [7 skills](review/index.md)
 
 </div>
 

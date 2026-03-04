@@ -9,6 +9,9 @@ description: "Aggressive evidence-based audit to verify project claims match imp
 
 :material-tag: `review`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/reality-audit/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/reality-audit/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Performs an aggressive, evidence-based audit to verify that project claims match implementation reality. Acts as an external auditor who trusts nothing without proof.

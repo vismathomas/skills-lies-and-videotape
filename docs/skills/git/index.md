@@ -4,7 +4,7 @@ description: "Git operations, analysis, and history management"
 icon: material/git
 ---
 
-# :git: Git & Version Control
+# :material-git: Git & Version Control
 
 Git operations, analysis, and history management
 

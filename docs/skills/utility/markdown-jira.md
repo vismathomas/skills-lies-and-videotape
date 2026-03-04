@@ -9,6 +9,9 @@ description: "Convert standard markdown syntax into Jira-compatible wiki markup"
 
 :material-tag: `utility`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/markdown-jira/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/markdown-jira/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Converts standard markdown syntax into Jira-compatible wiki markup. Handles headings, bold/italic, code blocks, links, tables, nested lists, and other formatting differences.

@@ -9,6 +9,9 @@ description: "Manage git operations safely. Includes stale state detection, bran
 
 :material-tag: `git`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/git/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/git/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Manages git operations safely with built-in protections. Includes stale state detection, branch/commit management, and protected branch enforcement. Never pushes without explicit user confirmation.

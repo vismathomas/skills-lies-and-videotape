@@ -9,6 +9,9 @@ description: "Browser automation with Playwright. Write and execute custom Playw
 
 :material-tag: `testing` · :material-github: [https://github.com/lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill)
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/playwright/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/playwright/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 General-purpose browser automation with Playwright. Write and execute custom Playwright code for testing, scraping, visual regression, form interaction, and any browser automation task.

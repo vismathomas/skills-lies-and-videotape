@@ -6,6 +6,9 @@ title: Improvement Discovery
 
 :material-tag: `analysis`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/improvement-discovery/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/improvement-discovery/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Identifies concrete, justified improvements to a codebase that are aligned with the project's stated goals. Avoids generic best practices and speculative recommendations — every suggestion must have clear value.

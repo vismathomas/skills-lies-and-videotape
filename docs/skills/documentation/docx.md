@@ -9,6 +9,9 @@ description: "Create, read, and edit Word documents (.docx). Use when producing 
 
 :material-tag: `documentation` · :material-github: [https://github.com/anthropics/skills/tree/main/skills/docx](https://github.com/anthropics/skills/tree/main/skills/docx)
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/docx/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/docx/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Creates, reads, and edits Word documents (.docx). Handles professional documents with formatting, tables of contents, headings, tracked changes, comments, and images.

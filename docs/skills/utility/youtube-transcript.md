@@ -9,6 +9,9 @@ description: "Extract transcripts from YouTube videos for research and documenta
 
 :material-tag: `utility` · :material-github: [https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/youtube-transcript](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/youtube-transcript)
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/youtube-transcript/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/youtube-transcript/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Extracts transcripts from YouTube videos for research and documentation. Uses a tiered approach: manual subtitles first, then auto-generated, then Whisper transcription as fallback.

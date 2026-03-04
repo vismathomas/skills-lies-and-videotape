@@ -9,6 +9,9 @@ description: "Enforces structured postmortem ritual when failures occur. Produce
 
 :material-tag: `analysis`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/postmortem/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/postmortem/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Enforces a structured postmortem ritual when failures occur. Produces blameless analysis with root cause investigation (5 Whys), timeline reconstruction, and actionable systemic improvements.

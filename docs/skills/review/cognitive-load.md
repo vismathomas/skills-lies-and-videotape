@@ -9,6 +9,9 @@ description: "Track and budget cognitive complexity introduced by changes. Compl
 
 :material-tag: `review`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/cognitive-load/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/cognitive-load/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Tracks and budgets cognitive complexity introduced by code changes. Measures complexity across indirection, abstraction depth, state mutations, and naming clarity — because complexity debt is worse than technical debt.

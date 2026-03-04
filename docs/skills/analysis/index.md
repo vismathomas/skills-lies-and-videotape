@@ -4,7 +4,7 @@ description: "Audit, review, and analyze code and projects"
 icon: material/magnify
 ---
 
-# :magnify: Analysis & Review
+# :material-magnify: Analysis & Review
 
 Audit, review, and analyze code and projects
 

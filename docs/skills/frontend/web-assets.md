@@ -9,6 +9,9 @@ description: "Generate favicons, app icons, PWA manifest, and social media image
 
 :material-tag: `frontend` · :material-github: [https://github.com/alonw0/web-asset-generator](https://github.com/alonw0/web-asset-generator)
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/web-assets/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/web-assets/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Generates production-ready web assets from logos, text, or emojis — including favicons, app icons, PWA manifest, Open Graph images, and Twitter card images.

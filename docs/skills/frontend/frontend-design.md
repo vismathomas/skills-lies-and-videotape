@@ -9,6 +9,9 @@ description: "Create distinctive, production-grade frontend interfaces with high
 
 :material-tag: `frontend` · :material-github: [https://github.com/anthropics/skills/tree/main/skills/frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design)
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/frontend-design/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/frontend-design/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Creates distinctive, production-grade frontend interfaces with high design quality. Avoids generic 'AI slop' aesthetics by applying real design principles — typography, color theory, spacing, and visual hierarchy.

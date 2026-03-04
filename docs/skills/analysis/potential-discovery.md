@@ -9,6 +9,9 @@ description: "Analyze incoming content (text, files, folders, URLs) to extract p
 
 :material-tag: `analysis`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/potential-discovery/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/potential-discovery/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Analyzes incoming content (text, files, folders, URLs) to extract purpose, create extensive summaries, and identify potential value for the current project. Suggests concrete integration opportunities.

@@ -9,6 +9,9 @@ description: "Audit the project's story for coherence. Ensure issues, commits, p
 
 :material-tag: `review`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/narrative-audit/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/narrative-audit/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Audits a project's story for coherence. Ensures that issues, commits, plans, documentation, and changelog all tell a consistent narrative without contradictions or gaps.

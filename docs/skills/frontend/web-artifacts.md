@@ -9,6 +9,9 @@ description: "Build interactive single-page web artifacts using React, TypeScrip
 
 :material-tag: `frontend` · :material-github: [https://github.com/anthropics/skills/tree/main/web-artifacts-builder](https://github.com/anthropics/skills/tree/main/web-artifacts-builder)
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/web-artifacts/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/web-artifacts/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Builds interactive single-page web artifacts using React, TypeScript, Tailwind CSS, and shadcn/ui. Bundles everything into self-contained HTML files for demos, prototypes, and tools.

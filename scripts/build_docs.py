@@ -26,17 +26,17 @@ DOCS_SKILLS = DOCS_DIR / "skills"
 MKDOCS_YML = ROOT / "mkdocs.yml"
 
 SKIP_DIRS = {"_archived"}
+REPO_URL = "https://github.com/vismathomas/skills-lies-and-videotape"
 
 # Category display names and ordering
 CATEGORY_META = {
     "analysis":            ("Analysis & Review",            "magnify",          "Audit, review, and analyze code and projects"),
+    "review":              ("Review",                       "shield-check",     "Code review, auditing, and verification"),
     "planning":            ("Planning",                     "clipboard-check",  "Plan, preview, and structure implementation work"),
     "git":                 ("Git & Version Control",        "git",              "Git operations, analysis, and history management"),
-    "docs":                ("Documentation",                "book-open-variant","Documentation sites and release management"),
-    "document-generation": ("Document Generation",          "file-document",    "Create Word, PowerPoint, and other document formats"),
+    "documentation":       ("Documentation",                "book-open-variant","Documentation sites, document generation, and release management"),
     "frontend":            ("Frontend & Design",            "palette",          "UI design, web assets, and visual tooling"),
     "testing":             ("Testing & Browser Automation", "test-tube",        "Browser automation, E2E testing, and BDD/Gherkin"),
-    "research":            ("Research",                     "flask",            "Deep research and information extraction"),
     "utility":             ("Utility",                      "wrench",           "General-purpose utility skills"),
 }
 
@@ -132,6 +132,14 @@ def generate_skill_page(skill: dict) -> str:
         meta_parts.append(f":material-github: [{skill['source']}]({skill['source']})")
     lines.append(" · ".join(meta_parts))
     lines.append("")
+
+    # GitHub links
+    skill_path = f"skills/{skill['folder']}/SKILL.md"
+    view_url = f"{REPO_URL}/blob/main/{skill_path}"
+    raw_url = f"{REPO_URL}/raw/main/{skill_path}"
+    lines.append(f"[:material-github: View on GitHub]({view_url}){{ .md-button }}")
+    lines.append(f"[:material-download: Download SKILL.md]({raw_url}){{ .md-button .md-button--primary }}")
+    lines.append("")
     lines.append("---")
     lines.append("")
 
@@ -170,7 +178,7 @@ def generate_category_index(category_key: str, label: str, icon: str, desc: str,
     lines.append(f"icon: material/{icon}")
     lines.append(f"---")
     lines.append("")
-    lines.append(f"# :{icon}: {label}")
+    lines.append(f"# :material-{icon}: {label}")
     lines.append("")
     lines.append(desc)
     lines.append("")
@@ -261,41 +269,44 @@ def generate_skills_index(skills_by_cat: dict[str, list[dict]]) -> str:
     return "\n".join(lines)
 
 
-def generate_home_page() -> str:
+def generate_home_page(skills_by_cat: dict[str, list[dict]]) -> str:
     """Generate a landing page for the docs site."""
-    return """---
-title: Home
----
-
-# Skills, Lies and Videotape
-
-Welcome to the skills documentation site — a curated library of AI agent skills for software engineering workflows.
-
-## Getting Started
-
-Browse the [:material-bookshelf: Skills Library](skills/index.md) to explore available skills by category.
-
-Each skill page includes:
-
-- **Description** — what the skill does and when to use it
-- **Usage Examples** — concrete prompts you can use
-- **Credits** — attribution for community-sourced skills
-- **Full Specification** — the complete technical SKILL.md in a collapsible section
-
-## Categories
-
-| Category | Description |
-|----------|-------------|
-| :material-magnify: **Analysis & Review** | Audit, review, and analyze code and projects |
-| :material-clipboard-check: **Planning** | Plan, preview, and structure implementation work |
-| :material-git: **Git & Version Control** | Git operations, analysis, and history management |
-| :material-book-open-variant: **Documentation** | Documentation sites and release management |
-| :material-file-document: **Document Generation** | Create Word, PowerPoint, and other document formats |
-| :material-palette: **Frontend & Design** | UI design, web assets, and visual tooling |
-| :material-test-tube: **Testing & Browser Automation** | Browser automation, E2E testing, and BDD/Gherkin |
-| :material-flask: **Research** | Deep research and information extraction |
-| :material-wrench: **Utility** | General-purpose utility skills |
-"""
+    lines = [
+        "---",
+        "title: Home",
+        "---",
+        "",
+        '<div style="text-align: center;">',
+        '  <img src="assets/images/logo.png" alt="Skills, Lies and Videotape" width="400">',
+        "</div>",
+        "",
+        "# Skills, Lies and Videotape",
+        "",
+        "Welcome to the skills documentation site — a curated library of AI agent skills for software engineering workflows.",
+        "",
+        "## Getting Started",
+        "",
+        "Browse the [:material-bookshelf: Skills Library](skills/index.md) to explore available skills by category.",
+        "",
+        "Each skill page includes:",
+        "",
+        "- **Description** — what the skill does and when to use it",
+        "- **Usage Examples** — concrete prompts you can use",
+        "- **Credits** — attribution for community-sourced skills",
+        "- **Full Specification** — the complete technical SKILL.md in a collapsible section",
+        "",
+        "## Categories",
+        "",
+        "| Category | Skills | Description |",
+        "|----------|--------|-------------|",
+    ]
+    for cat_key, (label, icon, desc) in CATEGORY_META.items():
+        if cat_key not in skills_by_cat:
+            continue
+        count = len(skills_by_cat[cat_key])
+        lines.append(f"| :material-{icon}: **[{label}](skills/{cat_key}/index.md)** | {count} | {desc} |")
+    lines.append("")
+    return "\n".join(lines)
 
 
 def build_nav(skills_by_cat: dict[str, list[dict]]) -> list:
@@ -322,6 +333,7 @@ def build_nav(skills_by_cat: dict[str, list[dict]]) -> list:
 
     return [
         {"Home": "index.md"},
+        {"Installation & Usage": "installation.md"},
         {"Skills": skills_nav},
     ]
 
@@ -374,7 +386,7 @@ def main():
     # Generate home page
     print("=== Generating pages ===\n")
     home_page = DOCS_DIR / "index.md"
-    home_page.write_text(generate_home_page(), encoding="utf-8")
+    home_page.write_text(generate_home_page(skills_by_cat), encoding="utf-8")
     print("  ✓ docs/index.md")
 
     # Generate skills index

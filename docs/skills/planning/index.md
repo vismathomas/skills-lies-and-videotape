@@ -4,7 +4,7 @@ description: "Plan, preview, and structure implementation work"
 icon: material/clipboard-check
 ---
 
-# :clipboard-check: Planning
+# :material-clipboard-check: Planning
 
 Plan, preview, and structure implementation work
 

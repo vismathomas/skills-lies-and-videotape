@@ -9,6 +9,9 @@ description: "Identify and map different sections of a software project (API, fr
 
 :material-tag: `analysis`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/project-sections/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/project-sections/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Analyzes a software project to identify and categorize its logical sections (API, frontend, database, CLI, domain logic). Enables context scoping, architecture documentation, and focused agent work.

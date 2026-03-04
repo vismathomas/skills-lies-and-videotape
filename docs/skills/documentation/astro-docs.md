@@ -9,6 +9,9 @@ description: "Scaffold and maintain Astro-based documentation sites with GitHub 
 
 :material-tag: `documentation`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/astro-docs/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/astro-docs/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Scaffold and maintain Astro-based documentation sites with GitHub Pages deployment. Handles site initialization, content authoring, component integration, and CI/CD setup.

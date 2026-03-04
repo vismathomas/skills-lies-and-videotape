@@ -9,6 +9,9 @@ description: "Generate an alternative plan that deliberately disagrees with the 
 
 :material-tag: `planning`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/shadow-plan/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/shadow-plan/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Generates an alternative plan that deliberately disagrees with the primary plan to expose blind spots. Forces consideration of different architectures, tradeoffs, and approaches.

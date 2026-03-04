@@ -9,6 +9,9 @@ description: "Deep topic research with optional issue creation from findings. Us
 
 :material-tag: `utility`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/research/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/research/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Conducts deep topic research with structured output. Supports quick, deep, and comparative research modes for investigating technologies, patterns, libraries, or any topic requiring investigation.

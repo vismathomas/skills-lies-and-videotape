@@ -9,6 +9,9 @@ description: "GitHub-safe Mermaid diagram rules. Use when writing or reviewing M
 
 :material-tag: `frontend`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/mermaid/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/mermaid/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Rules and constraints for authoring Mermaid diagrams that render correctly on GitHub. GitHub uses an older, restricted Mermaid renderer — this skill ensures your diagrams won't break.

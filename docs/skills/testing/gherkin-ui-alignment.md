@@ -9,6 +9,9 @@ description: "Validate alignment between Gherkin feature files, UI helper functi
 
 :material-tag: `testing`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/gherkin-ui-alignment/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/gherkin-ui-alignment/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Validates alignment between Gherkin feature files, UI helper functions, and frontend source code. Detects drift where steps reference UI elements that no longer exist or helpers that don't match the current UI.

@@ -9,6 +9,9 @@ description: "Architecture primer for structuring large multi-language Gherkin/B
 
 :material-tag: `testing`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/gherkin-architecture/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/gherkin-architecture/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Architecture primer for structuring large, multi-language Gherkin/BDD test suites. Covers folder organization, shared step strategies, cross-language patterns, and CI pipeline design.

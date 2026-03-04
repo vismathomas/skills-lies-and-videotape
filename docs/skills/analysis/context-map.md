@@ -9,6 +9,9 @@ description: "Analyze the codebase to create a concise, LLM-optimized structured
 
 :material-tag: `analysis`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/context-map/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/context-map/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Analyzes a codebase to create a concise, LLM-optimized structured overview. The resulting context map enables reasoning about the whole project without reading every file.

@@ -9,6 +9,9 @@ description: "Manage semantic versioning, changelog generation, and release note
 
 :material-tag: `documentation`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/versioning/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/versioning/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Manages semantic versioning, generates changelogs from completed issues or git history, and coordinates releases. Supports conventional commits, multiple input sources, and release notes generation.

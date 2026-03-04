@@ -9,6 +9,9 @@ description: "Manage git worktrees for isolated development. Create, list, remov
 
 :material-tag: `git`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/git-worktree/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/git-worktree/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Manages git worktrees for isolated development. Create, list, remove, and work in worktrees to develop multiple features simultaneously without switching branches.

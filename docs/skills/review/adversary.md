@@ -9,6 +9,9 @@ description: "Adversarial code reviewer that assumes implementation is wrong and
 
 :material-tag: `review`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/adversary/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/adversary/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Performs adversarial code reviews by assuming implementations are broken and systematically trying to find attack vectors, edge cases, and failure modes. Acts as a devil's advocate reviewer to strengthen code quality.

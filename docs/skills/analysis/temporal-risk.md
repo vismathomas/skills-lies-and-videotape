@@ -9,6 +9,9 @@ description: "Analyze how current changes might fail or become liabilities in 3,
 
 :material-tag: `analysis`
 
+[:material-github: View on GitHub](https://github.com/vismathomas/skills-lies-and-videotape/blob/main/skills/temporal-risk/SKILL.md){ .md-button }
+[:material-download: Download SKILL.md](https://github.com/vismathomas/skills-lies-and-videotape/raw/main/skills/temporal-risk/SKILL.md){ .md-button .md-button--primary }
+
 ---
 
 Analyzes how current changes might fail or become liabilities over 3, 6, and 12 month horizons. Identifies time-delayed risks that don't show up in code review.

@@ -88,9 +88,11 @@ markdown_extensions:
 
 extra_javascript:
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - js/download.js
 
 nav:
   - Home: index.md
+  - Installation & Usage: installation.md
   - Skills:
       - Overview: skills/index.md
       - Analysis & Review:
@@ -101,6 +103,15 @@ nav:
           - Potential Discovery: skills/analysis/potential-discovery.md
           - Project Section Identification: skills/analysis/project-sections.md
           - Temporal Risk Analysis: skills/analysis/temporal-risk.md
+      - Review:
+          - Overview: skills/review/index.md
+          - Adversarial Code Review: skills/review/adversary.md
+          - Article Verification: skills/review/article-verification.md
+          - Cognitive Load Tracker: skills/review/cognitive-load.md
+          - Narrative Coherence Audit: skills/review/narrative-audit.md
+          - Feature Justification Audit: skills/review/prove-your-worth.md
+          - Reality Audit: skills/review/reality-audit.md
+          - Code Review Response: skills/review/review-response.md
       - Planning:
           - Overview: skills/planning/index.md
           - Structured Interview: skills/planning/interview.md
@@ -116,6 +127,13 @@ nav:
           - Git Repository Analysis: skills/git/git-analysis.md
           - Git Story Generator: skills/git/git-story.md
           - Git Worktree Management: skills/git/git-worktree.md
+      - Documentation:
+          - Overview: skills/documentation/index.md
+          - Astro Documentation Sites: skills/documentation/astro-docs.md
+          - Word Document Generation: skills/documentation/docx.md
+          - MkDocs Site Management: skills/documentation/mkdocs.md
+          - PowerPoint Presentation Generation: skills/documentation/pptx.md
+          - Versioning & Release Management: skills/documentation/versioning.md
       - Frontend & Design:
           - Overview: skills/frontend/index.md
           - Frontend Design: skills/frontend/frontend-design.md
@@ -141,19 +159,3 @@ nav:
           - Markdown to Jira Conversion: skills/utility/markdown-jira.md
           - Deep Topic Research: skills/utility/research.md
           - YouTube Transcript Extraction: skills/utility/youtube-transcript.md
-      - Documentation:
-          - Overview: skills/documentation/index.md
-          - Astro Documentation Sites: skills/documentation/astro-docs.md
-          - Word Document Generation: skills/documentation/docx.md
-          - MkDocs Site Management: skills/documentation/mkdocs.md
-          - PowerPoint Presentation Generation: skills/documentation/pptx.md
-          - Versioning & Release Management: skills/documentation/versioning.md
-      - Review:
-          - Overview: skills/review/index.md
-          - Adversarial Code Review: skills/review/adversary.md
-          - Article Verification: skills/review/article-verification.md
-          - Cognitive Load Tracker: skills/review/cognitive-load.md
-          - Narrative Coherence Audit: skills/review/narrative-audit.md
-          - Feature Justification Audit: skills/review/prove-your-worth.md
-          - Reality Audit: skills/review/reality-audit.md
-          - Code Review Response: skills/review/review-response.md
