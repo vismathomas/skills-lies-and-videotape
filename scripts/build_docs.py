@@ -270,7 +270,7 @@ def generate_skills_index(skills_by_cat: dict[str, list[dict]]) -> str:
     return "\n".join(lines)
 
 
-def generate_home_page(skills_by_cat: dict[str, list[dict]]) -> str:
+def generate_home_page(skills_by_cat: dict[str, list[dict]], user_stories: list[dict] | None = None) -> str:
     """Generate a landing page for the docs site."""
     lines = [
         "---",
@@ -283,31 +283,42 @@ def generate_home_page(skills_by_cat: dict[str, list[dict]]) -> str:
         "",
         "# Skills, Lies and Videotape",
         "",
-        "Welcome to the skills documentation site — a curated library of AI agent skills for software engineering workflows.",
+        "A curated library of AI agent skills for software engineering workflows.",
         "",
-        "## Getting Started",
+        '<div class="grid cards" markdown>',
         "",
-        "Browse the [:material-bookshelf: Skills Library](skills/index.md) to explore available skills by category,",
-        "or read [:material-book-account: User Stories](user-stories/index.md) for real-world experiences and workflows.",
+        "-   :material-download:{ .lg .middle } **[Installation & Usage](installation.md)**",
         "",
-        "Each skill page includes:",
+        "    ---",
         "",
-        "- **Description** — what the skill does and when to use it",
-        "- **Usage Examples** — concrete prompts you can use",
-        "- **Credits** — attribution for community-sourced skills",
-        "- **Full Specification** — the complete technical SKILL.md in a collapsible section",
+        "    How to install skills and integrate them into your workflow",
         "",
-        "## Categories",
+        "-   :material-bookshelf:{ .lg .middle } **[Skills Library](skills/index.md)**",
         "",
-        "| Category | Skills | Description |",
-        "|----------|--------|-------------|",
+        "    ---",
+        "",
     ]
-    for cat_key, (label, icon, desc) in CATEGORY_META.items():
-        if cat_key not in skills_by_cat:
-            continue
-        count = len(skills_by_cat[cat_key])
-        lines.append(f"| :material-{icon}: **[{label}](skills/{cat_key}/index.md)** | {count} | {desc} |")
+
+    total = sum(len(v) for v in skills_by_cat.values())
+    lines.append(f"    Browse all **{total} skills** across **{len(skills_by_cat)} categories**")
     lines.append("")
+    lines.append("</div>")
+    lines.append("")
+
+    # Latest user stories
+    stories = user_stories or []
+    lines.append("## :material-book-account: Latest User Stories")
+    lines.append("")
+    if stories:
+        for story in stories:
+            desc = story["description"]
+            lines.append(f"- **[{story['title']}](user-stories/{story['file']})** — {desc}")
+        lines.append("")
+        lines.append("[:material-arrow-right: All user stories](user-stories/index.md)")
+    else:
+        lines.append("*No stories yet — be the first to contribute!*")
+    lines.append("")
+
     return "\n".join(lines)
 
 
@@ -449,8 +460,12 @@ def main():
 
     # Generate home page
     print("=== Generating pages ===\n")
+
+    # Collect user stories early so we can include them on the home page
+    user_stories = collect_user_stories()
+
     home_page = DOCS_DIR / "index.md"
-    home_page.write_text(generate_home_page(skills_by_cat), encoding="utf-8")
+    home_page.write_text(generate_home_page(skills_by_cat, user_stories), encoding="utf-8")
     print("  ✓ docs/index.md")
 
     # Generate skills index
@@ -479,8 +494,7 @@ def main():
     # Update mkdocs.yml nav
     print("\n=== Updating mkdocs.yml nav ===\n")
 
-    # Collect and generate user stories
-    user_stories = collect_user_stories()
+    # Generate user stories index
     if user_stories:
         us_index = generate_user_stories_index(user_stories)
         (DOCS_USER_STORIES / "index.md").write_text(us_index, encoding="utf-8")
