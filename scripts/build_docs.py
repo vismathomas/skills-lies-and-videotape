@@ -509,7 +509,10 @@ def main():
     # Handle CLI flags
     if "--serve" in sys.argv:
         print("Starting dev server...\n")
-        subprocess.run([sys.executable, "-m", "mkdocs", "serve"], cwd=ROOT)
+        try:
+            subprocess.run([sys.executable, "-m", "mkdocs", "serve"], cwd=ROOT)
+        except KeyboardInterrupt:
+            print("\nDev server stopped.")
     elif "--build" in sys.argv:
         print("Building static site...\n")
         subprocess.run([sys.executable, "-m", "mkdocs", "build"], cwd=ROOT)
